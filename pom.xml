@@ -133,13 +133,6 @@
         </dependencies>
       </plugin>
     </plugins>
-    <extensions>
-      <extension>
-        <groupId>com.gkatzioura.maven.cloud</groupId>
-        <artifactId>s3-storage-wagon</artifactId>
-        <version>1.6</version>
-      </extension>
-    </extensions>
   </build>
 
   <dependencies>
