@@ -9,8 +9,6 @@ notifications:
     on_pull_requests: false
     rooms:
       secure: H8fhRwfGcEb+DmBomTf527MCXPyuV+qwHTn+3CoOhavvb9IcGCgyp+i2L2W/n0UTCfsTrr4nebnpkCET5XkY2Yj59zifFisQ0wml94vB7g6UlYKtkkZ9rwqJaZUyTHPwFV99F/LkcYrEAE86e/xRr/7Kk8+hl17IEMq6N9ojYM6T7zXy6gHZB5MHCWIcL/Eu4/lYCkuX2eothf6DxojvqkT18orVOQMVYQ0W3XDshS6fgOu8RDn1KeuT40i0QG4wU5cqyQdRDD3ifUpQZFsXoLLAS6W/bj94YTcsV9d/vj3t8IStieIl5hi5HeZo7/ZiSlcfDLd8sWzzYJQ/lkwA8WmVGD8yl77ECs0kt3dW1Nf25KjYK+J9l2bsZ3uC0gqVvmxRRAN1lp2HsMWHgQD3caY93c7CwWX35OfnfujmDzLEj1wXhF/5rUXm1rxpNEcb9iUmf+2GGEpytuZQicwzxynM7PWt+wMfLg6KfR0az7EnDLF+qlYteJ8SdsSfCf9fx9epcGvVYXt8OxNrP5nrj3zMJd5hk7kqPlG/XP6rad+QPntISM4hem7bbiZ7rfk4cKhnYhbqo2l1QtuaU82TlSF9n+8Zz9hpuTI3THuxmF+s1JyhcbjTwOOIPuUGnxUKJEXj4OQ8JMeMghqNsG/chsCgTgN3fW/AfAtwGEKf9Jw=
-after_success:
-- mvn clean test jacoco:report coveralls:report
 deploy:
   provider: script
   script: mvn deploy --settings travis-settings.xml -DskipTests=true -B
