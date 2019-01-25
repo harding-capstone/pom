@@ -1,0 +1,13 @@
+<servers>
+  <server>
+    <id>capstone-snapshots</id>
+    <username>${env.SONATYPE_USERNAME}</username>
+    <password>${env.SONATYPE_PASSWORD}</password>
+  </server>
+  <server>
+    <id>capstone-releases</id>
+    <username>${env.SONATYPE_USERNAME}</username>
+    <password>${env.SONATYPE_PASSWORD}</password>
+  </server>
+  Z
+</servers>
