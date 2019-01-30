@@ -118,6 +118,7 @@
   </reporting>
 
   <build>
+    <finalName>${project.artifactId}-${project.version}-r${buildNumber}</finalName>
     <pluginManagement>
       <plugins>
         <plugin>
@@ -185,8 +186,6 @@
             </execution>
           </executions>
           <configuration>
-            <doCheck>true</doCheck>
-            <doUpdate>true</doUpdate>
             <shortRevisionLength>8</shortRevisionLength>
           </configuration>
         </plugin>
