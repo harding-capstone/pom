@@ -118,7 +118,6 @@
   </reporting>
 
   <build>
-    <finalName>${project.artifactId}-${project.version}-r${buildNumber}</finalName>
     <pluginManagement>
       <plugins>
         <plugin>
