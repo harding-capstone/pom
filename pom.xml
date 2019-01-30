@@ -18,6 +18,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <lombok.version>1.18.2</lombok.version>
     <log4j2.version>2.11.1</log4j2.version>
+    <java.version>11</java.version>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
   </properties>
 
   <distributionManagement>
@@ -30,6 +33,25 @@
       <url>http://capstone.shepherdjerred.com:8081/repository/capstone-releases/</url>
     </repository>
   </distributionManagement>
+
+  <repositories>
+    <repository>
+      <id>capstone-snapshots</id>
+      <url>http://capstone.shepherdjerred.com:8081/repository/capstone-snapshots/</url>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>capstone-releases</id>
+      <url>http://capstone.shepherdjerred.com:8081/repository/capstone-releases/</url>
+      <snapshots>
+        <enabled>false</enabled>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
+    </repository>
+  </repositories>
 
   <reporting>
     <plugins>
@@ -96,7 +118,6 @@
   </reporting>
 
   <build>
-    <finalName>$\{project.artifactId}-$\{project.version}-r$\{buildNumber}</finalName>
     <pluginManagement>
       <plugins>
         <plugin>
@@ -166,9 +187,7 @@
           <configuration>
             <doCheck>true</doCheck>
             <doUpdate>true</doUpdate>
-            <configuration>
-              <shortRevisionLength>8</shortRevisionLength>
-            </configuration>
+            <shortRevisionLength>8</shortRevisionLength>
           </configuration>
         </plugin>
       </plugins>
