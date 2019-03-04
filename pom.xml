@@ -274,6 +274,11 @@
         <artifactId>ai-algorithms</artifactId>
         <version>0.2.0</version>
       </dependency>
+      <dependency>
+        <groupId>io.jenetics</groupId>
+        <artifactId>jenetics</artifactId>
+        <version>4.4.0</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 </project>
