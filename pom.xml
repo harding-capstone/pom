@@ -103,9 +103,9 @@
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>3.0.1</version>
         <configuration>
-          <excludes>
+          <sourceFileExcludes>
             <exclude>module-info.java</exclude>
-          </excludes>
+          </sourceFileExcludes>
         </configuration>
       </plugin>
       <!-- Appease Maven -->
