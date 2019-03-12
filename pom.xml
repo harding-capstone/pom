@@ -44,14 +44,22 @@
         <enabled>true</enabled>
         <updatePolicy>always</updatePolicy>
       </snapshots>
+      <releases>
+        <enabled>false</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
     </repository>
     <repository>
       <id>capstone-releases</id>
       <url>http://capstone.shepherdjerred.com:8081/repository/capstone-releases/</url>
       <snapshots>
         <enabled>false</enabled>
-        <updatePolicy>always</updatePolicy>
+        <updatePolicy>never</updatePolicy>
       </snapshots>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+      </releases>
     </repository>
   </repositories>
 
