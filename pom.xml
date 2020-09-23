@@ -26,13 +26,9 @@
   </properties>
 
   <distributionManagement>
-    <snapshotRepository>
-      <id>capstone-snapshots</id>
-      <url>http://capstone.shepherdjerred.com:8081/repository/capstone-snapshots/</url>
-    </snapshotRepository>
     <repository>
-      <id>capstone-releases</id>
-      <url>http://capstone.shepherdjerred.com:8081/repository/capstone-releases/</url>
+      <id>harding-capstone ${artifactId}</id>
+      <url>https://maven.pkg.github.com/harding-capstone/${artifactId}</url>
     </repository>
   </distributionManagement>
 
@@ -48,24 +44,44 @@
       </snapshots>
     </repository>
     <repository>
-      <id>capstone-snapshots</id>
-      <url>http://capstone.shepherdjerred.com:8081/repository/capstone-snapshots/</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
+      <id>harding-capstone ai</id>
+      <url>https://maven.pkg.github.com/harding-capstone/ai</url>
     </repository>
     <repository>
-      <id>capstone-releases</id>
-      <url>http://capstone.shepherdjerred.com:8081/repository/capstone-releases/</url>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
+      <id>harding-capstone common</id>
+      <url>https://maven.pkg.github.com/harding-capstone/common</url>
+    </repository>
+    <repository>
+      <id>harding-capstone engine</id>
+      <url>https://maven.pkg.github.com/harding-capstone/engine</url>
+    </repository>
+    <repository>
+      <id>harding-capstone events</id>
+      <url>https://maven.pkg.github.com/harding-capstone/events</url>
+    </repository>
+    <repository>
+      <id>harding-capstone logic</id>
+      <url>https://maven.pkg.github.com/harding-capstone/logic</url>
+    </repository>
+    <repository>
+      <id>harding-capstone network</id>
+      <url>https://maven.pkg.github.com/harding-capstone/network</url>
+    </repository>
+    <repository>
+      <id>harding-capstone pom</id>
+      <url>https://maven.pkg.github.com/harding-capstone/pom</url>
+    </repository>
+    <repository>
+      <id>harding-capstone server</id>
+      <url>https://maven.pkg.github.com/harding-capstone/server</url>
+    </repository>
+    <repository>
+      <id>harding-capstone storage</id>
+      <url>https://maven.pkg.github.com/harding-capstone/storage</url>
+    </repository>
+    <repository>
+      <id>harding-capstone tui</id>
+      <url>https://maven.pkg.github.com/harding-capstone/tui</url>
     </repository>
   </repositories>
 
